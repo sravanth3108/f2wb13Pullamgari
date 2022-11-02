@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Search results Curriculum 
+  -  var results = [{ "courseName": "ADB", "department":"ACS", "credits":3},{ "courseName": "ISID", "department":"IS", "credits":3},{ "courseName": "farming", "department":"Agriculture", "credits":3}];
+  div.container-fluid
+    div.row
+      each item,index in results 
+        div.col-sm-2 CourseName: #{item["courseName"]}  <hr>  Department: #{item["department"]} <hr> Credits: #{item["credits"]} 
+  
+   
+
